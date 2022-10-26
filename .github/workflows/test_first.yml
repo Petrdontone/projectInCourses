@@ -1,16 +1,18 @@
-name: TestActions
+name: Test_Actions
 
 on:
  push:
-   branches: 
-     - main
-
+  branches:
+    - main
 
 jobs:
-  My_testing:
-    runs-on: ubuntu-latest
+		My_TESTING:
+			runs-on: ubuntu-latest
+			steps:
+				- name: Print
+						run: echo "Hello Every one, test job"
+			
+			
+
 
     
-    steps:
-      - name: Pring Hello Message
-        run: echo "Hello everybody, this is my first job"
