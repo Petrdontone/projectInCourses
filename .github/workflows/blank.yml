@@ -17,3 +17,12 @@ jobs:
     steps:
       - name: test2
         run: echo "Hell too, it's second test"
+        
+  build:
+    runs-on: ubuntu-latest
+    name: Telegram
+    needs: [SECOND_JOB]
+    steps:
+      - name: test3
+        run: mkdir folder && cd folder && touch file.json && echo "test_script" > file.json
+    
