@@ -1,1 +1,21 @@
+name: Actions_Test
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  FIRST_JOB:
+    runs-on: ubuntu-latest
+    steps:
+      - name:
+        run: echo "Hello, EveryOne. It's test"
+  
+  SECOND_JOB:
+    runs-on: ubuntu-latest
+    steps:
+      - name:
+        run: echo "Hell too, it's second test"
+    
 
